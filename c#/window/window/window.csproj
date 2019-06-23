@@ -46,6 +46,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddNewBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewBook.Designer.cs">
+      <DependentUpon>AddNewBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddOldBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOldBook.Designer.cs">
+      <DependentUpon>AddOldBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminBookType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminBookType.Designer.cs">
+      <DependentUpon>AdminBookType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReaderType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminReaderType.Designer.cs">
+      <DependentUpon>AdminReaderType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRecommend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRecommend.Designer.cs">
+      <DependentUpon>AdminRecommend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUser.Designer.cs">
+      <DependentUpon>AdminUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="BookInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +127,27 @@
     <Compile Include="User.Designer.cs">
       <DependentUpon>User.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddNewBook.resx">
+      <DependentUpon>AddNewBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddOldBook.resx">
+      <DependentUpon>AddOldBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminBookType.resx">
+      <DependentUpon>AdminBookType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminReaderType.resx">
+      <DependentUpon>AdminReaderType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRecommend.resx">
+      <DependentUpon>AdminRecommend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUser.resx">
+      <DependentUpon>AdminUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BookInfo.resx">
       <DependentUpon>BookInfo.cs</DependentUpon>
     </EmbeddedResource>

@@ -103,7 +103,7 @@
             // loginB
             // 
             this.loginB.Font = new System.Drawing.Font("幼圆", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.loginB.Location = new System.Drawing.Point(60, 93);
+            this.loginB.Location = new System.Drawing.Point(52, 93);
             this.loginB.Name = "loginB";
             this.loginB.Size = new System.Drawing.Size(63, 26);
             this.loginB.TabIndex = 2;
@@ -114,7 +114,7 @@
             // regB
             // 
             this.regB.Font = new System.Drawing.Font("幼圆", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.regB.Location = new System.Drawing.Point(129, 93);
+            this.regB.Location = new System.Drawing.Point(121, 93);
             this.regB.Name = "regB";
             this.regB.Size = new System.Drawing.Size(63, 26);
             this.regB.TabIndex = 3;
@@ -125,9 +125,9 @@
             // adminB
             // 
             this.adminB.Font = new System.Drawing.Font("幼圆", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.adminB.Location = new System.Drawing.Point(198, 93);
+            this.adminB.Location = new System.Drawing.Point(190, 93);
             this.adminB.Name = "adminB";
-            this.adminB.Size = new System.Drawing.Size(77, 26);
+            this.adminB.Size = new System.Drawing.Size(105, 26);
             this.adminB.TabIndex = 4;
             this.adminB.Text = "管理员登陆";
             this.adminB.UseVisualStyleBackColor = true;

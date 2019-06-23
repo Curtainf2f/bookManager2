@@ -69,6 +69,8 @@ namespace window
                 {
                     MessageBox.Show("登陆成功");
                     this.Hide();
+                    Admin admin = new Admin();
+                    admin.Show();
                 }
                 else
                 {

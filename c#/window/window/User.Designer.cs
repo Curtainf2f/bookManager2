@@ -355,17 +355,17 @@
             // 
             // fineInfo
             // 
-            this.fineInfo.Location = new System.Drawing.Point(327, 99);
+            this.fineInfo.Location = new System.Drawing.Point(22, 99);
             this.fineInfo.Name = "fineInfo";
-            this.fineInfo.Size = new System.Drawing.Size(236, 34);
+            this.fineInfo.Size = new System.Drawing.Size(221, 34);
             this.fineInfo.TabIndex = 6;
-            this.fineInfo.Text = "显示历史未缴费罚金";
+            this.fineInfo.Text = "即将到期";
             this.fineInfo.UseVisualStyleBackColor = true;
             this.fineInfo.Click += new System.EventHandler(this.FineInfo_Click);
             // 
             // overTime
             // 
-            this.overTime.Location = new System.Drawing.Point(22, 99);
+            this.overTime.Location = new System.Drawing.Point(342, 99);
             this.overTime.Name = "overTime";
             this.overTime.Size = new System.Drawing.Size(221, 34);
             this.overTime.TabIndex = 5;
@@ -375,9 +375,9 @@
             // 
             // borrowLog
             // 
-            this.borrowLog.Location = new System.Drawing.Point(327, 59);
+            this.borrowLog.Location = new System.Drawing.Point(342, 59);
             this.borrowLog.Name = "borrowLog";
-            this.borrowLog.Size = new System.Drawing.Size(236, 34);
+            this.borrowLog.Size = new System.Drawing.Size(221, 34);
             this.borrowLog.TabIndex = 4;
             this.borrowLog.Text = "显示历史借阅情况";
             this.borrowLog.UseVisualStyleBackColor = true;
@@ -646,6 +646,7 @@
             // 
             this.infoCard.Location = new System.Drawing.Point(155, 485);
             this.infoCard.Name = "infoCard";
+            this.infoCard.ReadOnly = true;
             this.infoCard.Size = new System.Drawing.Size(239, 34);
             this.infoCard.TabIndex = 18;
             this.infoCard.Text = "infoCard";

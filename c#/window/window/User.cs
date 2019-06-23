@@ -35,6 +35,10 @@ namespace window
             canBorrowLoad();
             HotBooksLoad();
             recommendLoad();
+            FineInfo_Click(sender, e);
+            if (dataGridView2.RowCount > 1) {
+                MessageBox.Show("您有书即将到期");
+            }
             NowBorrow_Click(sender, e);
             InfoLoad();
             fineLoad();
@@ -301,7 +305,9 @@ namespace window
 
         private void FineInfo_Click(object sender, EventArgs e) {
             try {
-                string sql = "select readerId, barCode 条形码, borrowTime 借出时间, returnTime 归还时间, fine 罚金, remarks 管理员备注 from borrowLog where paymented = '未缴费'";
+                string sql = "select borrow.readerId, borrow.barCode 条形码, books.ISBN, bookItem.name 书名, bookItem.author 作者, bookItem.publisher 出版社, borrow.borrowTime 借阅时间, borrow.borrowTime + dbo.getReaderCanBorrowTimes(borrow.readerId) 最晚归还时间";
+                sql += " from borrow left join books on borrow.barCode = books.barCode left join bookItem on books.ISBN = bookItem.ISBN";
+                sql += " where datediff(day, borrow.borrowTime +dbo.getReaderCanBorrowTimes(borrow.readerId), getdate()) <= 3";
                 sql += " and readerId = " + readerId;
                 using (SqlConnection cn = new SqlConnection(Database.ConnectionString)) {
                     cn.Open();

@@ -43,3 +43,10 @@ D:\study\bookManager\c#\window\window\obj\x86\Debug\window.pdb
 D:\study\bookManager\c#\window\window\obj\x86\Debug\window.BookInfo.resources
 D:\study\bookManager\c#\window\window\obj\x86\Debug\window.BoundReader.resources
 D:\study\bookManager\c#\window\window\obj\x86\Debug\window.ReturnFineWin.resources
+D:\study\bookManager\c#\window\window\obj\x86\Debug\window.Admin.resources
+D:\study\bookManager\c#\window\window\obj\x86\Debug\window.AdminUser.resources
+D:\study\bookManager\c#\window\window\obj\x86\Debug\window.AdminReaderType.resources
+D:\study\bookManager\c#\window\window\obj\x86\Debug\window.AddOldBook.resources
+D:\study\bookManager\c#\window\window\obj\x86\Debug\window.AddNewBook.resources
+D:\study\bookManager\c#\window\window\obj\x86\Debug\window.AdminBookType.resources
+D:\study\bookManager\c#\window\window\obj\x86\Debug\window.AdminRecommend.resources

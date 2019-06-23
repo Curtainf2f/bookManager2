@@ -20,7 +20,7 @@ namespace window
                 connectionString = value;
             }
         }
-        private static string process(object s){
+        public static string process(object s){
             Type t = s.GetType();
             if (t == typeof(int))
                 return s.ToString();
@@ -84,6 +84,21 @@ namespace window
                 SqlCommand cmd = new SqlCommand(sql, cn);
                 cmd.ExecuteNonQuery();
             }
+        }
+        public static string update(string table, LinkedList<string> column, LinkedList<object> data) {
+            Boolean first = true;
+            string sql = "update " + table + " set ";
+            LinkedListNode<string> columnNode = column.First;
+            LinkedListNode<object> dataNode = data.First;
+            while (columnNode != null) {
+                if (first) first = false;
+                else sql += " , ";
+                sql += (" " + columnNode.Value + " = ");
+                sql += process(dataNode.Value);
+                columnNode = columnNode.Next;
+                dataNode = dataNode.Next;
+            }
+            return sql;
         }
         public static string getCondition(LinkedList<string> column, LinkedList<object> data) {
             Boolean first = true;
