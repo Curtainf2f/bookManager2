@@ -1,5 +1,5 @@
 ﻿namespace window {
-    partial class 图书详情 {
+    partial class BookInfo {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -238,15 +238,16 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "双击表格信息借阅";
             // 
-            // 图书详情
+            // BookInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(867, 572);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "图书详情";
-            this.Text = "bookInfo";
+            this.Name = "BookInfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "图书详情";
             this.Load += new System.EventHandler(this.BookInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);

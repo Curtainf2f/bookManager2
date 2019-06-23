@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -84,6 +85,55 @@ namespace window
         {
             Reg reg = new Reg();
             reg.Show();
+        }
+
+        private void Button1_Click(object sender, EventArgs e) {
+            try {
+                string sql = "select * from users where userCard = '" + cardCode.Text + "'";
+                using (SqlConnection cn = new SqlConnection(Database.ConnectionString)) {
+                    cn.Open();
+                    SqlCommand cmd = new SqlCommand(sql, cn);
+                    SqlDataReader rd = cmd.ExecuteReader();
+                    if (!rd.Read() || cardCode.Text.Equals("")) {
+                        throw new Exception("无效的磁卡");
+                    }
+                    MessageBox.Show("登陆成功");
+                    User user = new User(rd["username"].ToString(), this);
+                    user.Show();
+                    this.Hide();
+                }
+            } catch (Exception ec) {
+                MessageBox.Show(ec.Message);
+            }
+        }
+
+        private void ReturnB_Click(object sender, EventArgs e) {
+            try {
+                string sql = "delete from borrow where barCode = " + barCode.Text;
+                using (SqlConnection cn = new SqlConnection(Database.ConnectionString)) {
+                    cn.Open();
+                    SqlCommand cmd = new SqlCommand(sql, cn);
+                    if (cmd.ExecuteNonQuery() > 0) {
+                        MessageBox.Show("归还成功");
+                    } else {
+                        throw new Exception("已借出书中不存在该书");
+                    }
+                }
+            } catch (Exception ec) {
+                MessageBox.Show(ec.Message);
+            }
+        }
+
+        private void BarCode_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyCode == Keys.Enter) {
+                this.ReturnB_Click(sender, e);
+            }
+        }
+
+        private void CardCode_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyCode == Keys.Enter) {
+                this.Button1_Click(sender, e);
+            }
         }
     }
 }

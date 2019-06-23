@@ -29,3 +29,17 @@ D:\study\图书管理系统\c#\window\window\obj\x86\Debug\window.csproj.CoreCom
 D:\study\图书管理系统\c#\window\window\obj\x86\Debug\window.exe
 D:\study\图书管理系统\c#\window\window\obj\x86\Debug\window.pdb
 D:\study\图书管理系统\c#\window\window\obj\x86\Debug\window.图书详情.resources
+D:\study\bookManager\c#\window\window\bin\Debug\window.exe
+D:\study\bookManager\c#\window\window\bin\Debug\window.pdb
+D:\study\bookManager\c#\window\window\obj\x86\Debug\window.csprojAssemblyReference.cache
+D:\study\bookManager\c#\window\window\obj\x86\Debug\window.Login.resources
+D:\study\bookManager\c#\window\window\obj\x86\Debug\window.Properties.Resources.resources
+D:\study\bookManager\c#\window\window\obj\x86\Debug\window.Reg.resources
+D:\study\bookManager\c#\window\window\obj\x86\Debug\window.User.resources
+D:\study\bookManager\c#\window\window\obj\x86\Debug\window.csproj.GenerateResource.cache
+D:\study\bookManager\c#\window\window\obj\x86\Debug\window.csproj.CoreCompileInputs.cache
+D:\study\bookManager\c#\window\window\obj\x86\Debug\window.exe
+D:\study\bookManager\c#\window\window\obj\x86\Debug\window.pdb
+D:\study\bookManager\c#\window\window\obj\x86\Debug\window.BookInfo.resources
+D:\study\bookManager\c#\window\window\obj\x86\Debug\window.BoundReader.resources
+D:\study\bookManager\c#\window\window\obj\x86\Debug\window.ReturnFineWin.resources

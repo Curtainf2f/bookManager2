@@ -93,7 +93,8 @@ create table borrowLog(
 	borrowTime smalldatetime not null,
 	returnTime smalldatetime,
 	fine money,
-	remarks varchar(50)
+	remarks varchar(50),
+	paymented varchar(10)
 )
 
 create table recommend(
@@ -102,7 +103,7 @@ create table recommend(
 	bookName varchar(30) not null,
 	author varchar(40) not null,
 	publish varchar(40),
-	recommendDate smalldatetime,
-	recommendStatus varchar(10),
+	recommendDate smalldatetime not null,
+	recommendStatus varchar(10) not null,
 	remarks varchar(50)
 )

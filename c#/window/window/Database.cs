@@ -28,6 +28,8 @@ namespace window
                 return s.ToString();
             if (s.ToString().Equals("null"))
                 return s.ToString();
+            if (s.ToString().Equals("getdate()"))
+                return s.ToString();
             return "'" + s.ToString() + "'";
         }
         public static Boolean haveData(string table, LinkedList<string> column, LinkedList<object> data)
@@ -54,10 +56,19 @@ namespace window
                 else return false;
             }
         }
-        public static void insert(string table, LinkedList<object> data)
+        public static void insert(string table, LinkedList<string> colunm, LinkedList<object> data)
         {
             Boolean first = true;
-            string sql = "insert into " + table + " values (";
+            string sql = "insert into " + table + "(";
+            LinkedListNode<string> col = colunm.First;
+            while (col != null) {
+                if (first) first = false;
+                else sql += ",";
+                sql += col.Value;
+                col = col.Next;
+            }
+            sql += ") values (";
+            first = true;
             LinkedListNode<Object> dataName = data.First;
             while (dataName != null)
             {

@@ -56,9 +56,8 @@ namespace window
                 col.AddLast("username"); data.AddLast(username.Text);
                 if (Database.haveData("users", col, data))
                     throw new Exception("用户名已存在");
-                data.AddLast(password.Text);
-                data.AddLast("null");
-                Database.insert("users", data);
+                col.AddLast("pwd"); data.AddLast(password.Text);
+                Database.insert("users", col, data);
                 MessageBox.Show("注册成功");
                 this.Dispose();
             }

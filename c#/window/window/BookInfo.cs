@@ -9,7 +9,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 
 namespace window {
-    public partial class 图书详情 : Form {
+    public partial class BookInfo : Form {
         private string ISBN;
         private int readerId;
         private void BookInfo_Load(object sender, EventArgs e) {
@@ -69,7 +69,7 @@ namespace window {
             }
         }
 
-        public 图书详情(int readerId, string ISBN) {
+        public BookInfo(int readerId, string ISBN) {
             InitializeComponent();
             this.readerId = readerId;
             this.ISBN = ISBN;

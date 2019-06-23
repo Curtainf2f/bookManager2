@@ -17,6 +17,8 @@ insert into users values('b', '123456', null, null)
 exec boundReader 'b', 1, '350526199811111221', 'Ğ¡ºì', 'Å®', 18, '18795354249', 'ĞÅÏ¢Ñ§Ôº'
 exec changeUser '350526199811111111', 'c', '222222'
 
+insert into borrow values(1, 2, '2019-5-1')
+
 select * from users
 select * from readers
 select * from readerTypes
@@ -48,6 +50,7 @@ borrowLog.borrowTime ½è³öÊ±¼ä, borrowLog.returnTime ¹é»¹Ê±¼ä, borrowLog.fine ·£½
 borrowLog.remarks ¹ÜÀíÔ±±¸×¢ from borrowLog left join books on books.barCode = borrowLog.barCode left join bookItem on bookItem.ISBN = books.ISBN
 where borrowLog.readerId = 1
 
-select barCode ÌõĞÎÂë, borrowTime ½è³öÊ±¼ä, returnTime ¹é»¹Ê±¼ä, fine ·£½ğ, remarks ¹ÜÀíÔ±±¸×¢ from borrowLog where fine is not null\
+select barCode ÌõĞÎÂë, borrowTime ½è³öÊ±¼ä, returnTime ¹é»¹Ê±¼ä, fine ·£½ğ, remarks ¹ÜÀíÔ±±¸×¢ from borrowLog where fine is not null
 
 select ISBN, bookName ÊéÃû, author ×÷Õß, publish ³ö°æÉç, recommendDate ÍÆ¼öÈÕÆÚ, recommendStatus ÍÆ¼ö×´Ì¬, remarks ¹ÜÀíÔ±±¸×¢ from recommend order by recommendDate desc
+

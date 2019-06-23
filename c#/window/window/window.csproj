@@ -52,6 +52,12 @@
     <Compile Include="BookInfo.Designer.cs">
       <DependentUpon>BookInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="BoundReader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoundReader.Designer.cs">
+      <DependentUpon>BoundReader.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -67,6 +73,12 @@
     <Compile Include="Reg.Designer.cs">
       <DependentUpon>Reg.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReturnFineWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnFineWin.Designer.cs">
+      <DependentUpon>ReturnFineWin.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +87,9 @@
     </Compile>
     <EmbeddedResource Include="BookInfo.resx">
       <DependentUpon>BookInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoundReader.resx">
+      <DependentUpon>BoundReader.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -90,6 +105,9 @@
     </Compile>
     <EmbeddedResource Include="Reg.resx">
       <DependentUpon>Reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnFineWin.resx">
+      <DependentUpon>ReturnFineWin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>
